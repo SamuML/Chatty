@@ -1,0 +1,193 @@
+@font-face {
+  font-family: 'Panton';
+  src: url('Fonts/panton/Panton-BlackCaps.otf') format('opentype'), url('Fonts/panton/Panton-BlackitalicCaps.otf') format('opentype'), url('Fonts/panton/Panton-LightCaps.otf') format('opentype'), url('Fonts/panton/Panton-LightitalicCaps.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Maven';
+  src: url('Fonts/maven-pro/MavenPro-Medium.ttf') format('truetype'), url('Fonts/maven-pro/MavenPro-Bold.ttf') format('truetype'), url('Fonts/maven-pro/MavenPro-Black.ttf') format('truetype'), url('Fonts/maven-pro/MavenPro-Regular.ttf') format('truetype');
+}
+
+.App {
+  font-family: 'Maven', sans-serif;
+  background-attachment: fixed;
+  background-image: url("bg.png");
+}
+
+html {
+  overflow: hidden;
+  height: 100vh;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.app-logo {
+  height: 75%;
+  width: 65%;
+}
+
+.category {
+  color: black;
+  text-decoration: none;
+  font-size: x-large;
+  font-weight: 700;
+  transition: transform 0.2s;
+}
+
+.category:hover{
+  transform: scale(1.2);
+}
+
+.content {
+  font-family: 'Maven', sans-serif;
+  font-size: x-large;
+  text-align: center;
+  color: black;
+}
+
+.placeholder-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-top: 2.5%;
+  margin-bottom: 90px;
+}
+.p {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+}
+
+
+.layout-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.logo-container {
+  flex: 0 0 35%;
+  display: flex;
+  justify-content: center;
+}
+
+.placeholder-logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.key-points-container {
+  flex: 0 0 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.key-point {
+  background: transparent;
+  padding: 5%;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.key-point h3 {
+  margin: 0;
+}
+
+.key-point p {
+  margin: 10px 0 0;
+}
+
+/* .background-gradient {
+  background-image: linear-gradient(to right bottom, #000000, #171315, #261f23, #342b34, #413946, #534d5a, #65616f, #787685, #9896a2, #b9b8c0, #dcdbdf, #ffffff);
+  background-image: linear-gradient(to right bottom, #1a1a1a, #252525, #303030, #3b3b3b, #474747, #595959, #6b6b6b, #7e7e7e, #9d9d9d, #bcbcbc, #dddddd, #ffffff);
+  background-image: linear-gradient(to right bottom, #1a1a1a, #4b4b4b, #838383, #bfbfbf, #ffffff);
+} */
+
+.section-text {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.scroll-container {
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+}
+
+.section {
+  height: 92vh;
+  scroll-snap-align: start;
+  scroll-margin-top: 12vh;
+}
+
+.header {
+  z-index: 100;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  border-radius: 50px;
+  width: 70%;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+  border: 1px solid black;
+  top: 2px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+.impressum-container {
+  transform: translate(21.5%, 0);
+  width: 70%;
+  height: 70%;
+  background: linear-gradient(0.2turn,#eeeeee, #ffffff);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+}
+
+.impressum-container .details {
+  background: linear-gradient(.8turn,#eeeeee, #f1f1f136);
+  transform: translate(0%, 0);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 50%;
+  height: 65%;
+}
+
+.impressum-container .details h2{
+  position: absolute;
+  top: 0%;
+}
+
+.accordion-container {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  z-index: 10;
+}
